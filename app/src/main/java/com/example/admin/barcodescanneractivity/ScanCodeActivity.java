@@ -374,6 +374,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
                 scanner_data.put("part_quantity", String.valueOf(quantity));
                 scanner_data.put("correct_barcode", String.valueOf(sh.getInt("correct",0)));
                 scanner_data.put("wrong_barcode", String.valueOf(sh.getInt("wrong",0)));
+                String wrong = String.valueOf(sh.getInt("wrong",0));
                 scanner_data.put("month",month_name);
                 //Todo: get plant name from SharedPrefs
                 scanner_data.put("plant",plants);
@@ -401,7 +402,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
                                     }else{
                                         supervisor_phno.addAll(head_supervisor_phno);
                                         for(String i : supervisor_phno) {
-                                            new Sendsms(i).execute();
+                                            new Sendsms(i,wrong).execute();
                                         }
                                     }
                                 }else{
@@ -530,13 +531,15 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
 
     class Sendsms extends AsyncTask<Void,Void, Void>{
         String phno;
-        Sendsms(String phno){
+        String wrong;
+        Sendsms(String phno, String wrong){
             this.phno = phno;
+            this.wrong = wrong;
         }
 
         @Override
         protected Void doInBackground(Void... voids) {
-            mySmsManager.sendTextMessage(phno, null, "!!Alert!!\n\n"+"Please note in vehicle no: "+vehicle_number.toString()+"\n"+"Part no: "+selectedPartName.toString()+"\n"+"Found Wrong barcode QTY: "+String.valueOf(sh.getInt("wrong",0))+"\n\n"+"Please act immediately before reaching to customer", null, null);
+            mySmsManager.sendTextMessage(phno, null, "!!Alert!!\n\n"+"Please note in vehicle no: "+vehicle_number.toString()+"\n"+"Part no: "+selectedPartName.toString()+"\n"+"Found Wrong barcode QTY: "+wrong.toString()+"\n\n"+"Please act immediately before reaching to customer", null, null);
             return null;
         }
 
@@ -555,7 +558,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
 
         @Override
         protected Void doInBackground(Void... voids) {
-            mySmsManager.sendTextMessage(phno, null, "!!Alert!!\n\n"+"Please note in vehicle no: "+vehicle_number.toString()+"\n"+"Part no: "+selectedPartName.toString()+"\n"+"Found Wrong barcode QTY: "+String.valueOf(sh.getInt("wrong",0))+"\n\n"+"All parts have correct barcode", null, null);
+            mySmsManager.sendTextMessage(phno, null, "!!Alert!!\n\n"+"Please note in vehicle no: "+vehicle_number.toString()+"\n"+"Part no: "+selectedPartName.toString()+"\n"+"\n\n"+"All parts have correct barcode", null, null);
             return null;
         }
 

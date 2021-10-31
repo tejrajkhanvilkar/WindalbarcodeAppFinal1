@@ -95,8 +95,13 @@ public class ViewUser extends AppCompatActivity {
                 .collection("all supervisors")
                 .get();
 
+        Task task3 = db.collection(plants)
+                .document("head supervisor")
+                .collection("all head supervisor")
+                .get();
+
         //we choosed whenAllSucces beacause we just wnated successlisterner but when we need failure listener we need to use the whenAllComplete
-        Task<List<QuerySnapshot>> allTasks = Tasks.whenAllSuccess(task1, task2);
+        Task<List<QuerySnapshot>> allTasks = Tasks.whenAllSuccess(task1, task2, task3);
         allTasks.addOnSuccessListener(new OnSuccessListener<List<QuerySnapshot>>() {
             @Override
             public void onSuccess(List<QuerySnapshot> querySnapshots) {
