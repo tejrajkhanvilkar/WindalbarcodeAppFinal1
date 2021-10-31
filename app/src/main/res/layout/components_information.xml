@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/old_wagon"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="OLD WAGON"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+<!--    <Button-->
+<!--        android:id="@+id/newWagon"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="NEW WAGON"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+<!--    <Button-->
+<!--        android:id="@+id/sso_old"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="SSO OLD"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+<!--    <Button-->
+<!--        android:id="@+id/sso_new"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="SSO NEW"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+<!--    <Button-->
+<!--        android:id="@+id/_28_Hp_frame"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="28 HP FRAME"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+<!--    <Button-->
+<!--        android:id="@+id/_36_Hp_frame"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="36 HP FRAME"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+<!--    <Button-->
+<!--        android:id="@+id/_3d_frame"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="3-D FRAME"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+<!--    <Button-->
+<!--        android:id="@+id/utul_frame"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        android:text="UTUL FRAME"-->
+<!--        android:textColor="#E74C3C"-->
+<!--        android:textAllCaps="false" />-->
+
+
+
+</LinearLayout>

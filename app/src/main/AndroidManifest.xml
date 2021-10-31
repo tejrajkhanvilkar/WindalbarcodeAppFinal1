@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.barcodescanneractivity">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.Camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@raw/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@raw/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Admin.editprofile"></activity>
+        <activity
+            android:name=".Admin.ViewUser"
+            android:exported="true" />
+        <activity
+            android:name=".ExportToExcel"
+            android:exported="true" />
+        <activity
+            android:name=".DynamicParts"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.Addparts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Masteradminlogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.Addplants"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.ViewData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sp2"
+            android:exported="true" />
+        <activity
+            android:name=".sp1"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.Adminbottomnavigation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.AdminLoginScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginoptionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".compnentsinformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicleinformation"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ScanCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Loginactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.admin.barcodescanneractivity"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

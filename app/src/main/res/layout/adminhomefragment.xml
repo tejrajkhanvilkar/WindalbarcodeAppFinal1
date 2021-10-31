@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#F73535"
+        app:cardCornerRadius="50dp">
+
+        <Button
+            android:id="@+id/btn_viewdata"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#ffffff"
+            android:text="VIEW DATA "
+            android:textAllCaps="false"
+            android:textColor="#E74C3C " />
+
+        <Button
+            android:id="@+id/btn_viewuser"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#ffffff"
+            android:text="VIEW USERS "
+            android:textAllCaps="false"
+            android:textColor="#E74C3C"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/btn_edituserdata"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#ffffff"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="Edit Users"
+            android:textColor="#E74C3C">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_addpartdata"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="270dp"
+            android:backgroundTint="#ffffff"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="ADD PARTS"
+            android:textColor="#E74C3C">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_addplantdata"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="340dp"
+            android:backgroundTint="#ffffff"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="ADD PLANT"
+            android:textColor="#E74C3C">
+        </Button>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

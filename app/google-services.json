@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948978879300",
+    "project_id": "windal-barcode-project",
+    "storage_bucket": "windal-barcode-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948978879300:android:87406a9da274bc573f6511",
+        "android_client_info": {
+          "package_name": "com.example.windalbarcodeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948978879300-54t8lqapsn0c25qmutkratufeiu9bl68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOWeAIv9Qlhi9AR1pWRgOV8tv7A-mVpFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948978879300-54t8lqapsn0c25qmutkratufeiu9bl68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

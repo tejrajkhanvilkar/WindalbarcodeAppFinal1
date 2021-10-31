@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <Button
+         android:id="@+id/deleteuser"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:background="@drawable/buttonss"
+         android:backgroundTint="@color/colorPrimary"
+         android:textColor="@color/white"
+         android:layout_marginTop="250dp"
+         android:layout_width="match_parent"
+         android:layout_height="55dp"
+         android:textSize="20dp"
+         android:textAlignment="center"
+         android:text="Delete USER">
+     </Button>
+
+    <Button
+        android:id="@+id/deleteSupervisor"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/buttonss"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Delete SUPERVISOR ">
+    </Button>
+
+</LinearLayout>

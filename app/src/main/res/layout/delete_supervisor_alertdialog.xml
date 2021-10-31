@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="#F73535"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+    <TextView
+        android:textColor="@color/white"
+        android:text="DELETE SUPERVISOR"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="35dp">
+    </TextView>
+
+    <TextView
+        android:textColor="@color/white"
+        android:text="ENTER EMAIL"
+        android:textAlignment="textStart"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="35dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/deletesupervisoremail"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Enter supervisor email to delete"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/deletesupervisorButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/buttonss"
+        android:backgroundTint="@color/white"
+        android:text="DELETE SUPERVISOR">
+
+    </Button>
+
+
+</androidx.cardview.widget.CardView>

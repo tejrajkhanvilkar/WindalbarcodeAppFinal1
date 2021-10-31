@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/selected_date"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:text="select date">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/datepickerdialog"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#ffffff"
+            android:src="@drawable/ic_date"
+            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewdata_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

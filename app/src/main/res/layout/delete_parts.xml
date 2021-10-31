@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="#F73535"
+    android:layout_width="match_parent"
+    android:layout_height="195dp">
+    <TextView
+        android:textColor="@color/white"
+        android:text="DELETE PARTS"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="35dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="PART NAME"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            tools:ignore="RtlCompat"></TextView>
+
+        <EditText
+            android:id="@+id/deletepart"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="Enter part name"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+        </EditText>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/deletepartbutton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/buttonss"
+        android:backgroundTint="@color/white"
+        android:text="DELETE PART"></Button>
+
+
+</androidx.cardview.widget.CardView>

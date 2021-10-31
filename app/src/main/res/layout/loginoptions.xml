@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@raw/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#AC190A"
+       >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Log In as:"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_LoginAsUser"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#ffffff"
+            android:text="User"
+            android:textAllCaps="false"
+            android:textColor="#E74C3C " />
+
+        <Button
+            android:id="@+id/btn_LoginAsAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#ffffff"
+            android:text="Admin"
+            android:textAllCaps="false"
+            android:textColor="#E74C3C" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
