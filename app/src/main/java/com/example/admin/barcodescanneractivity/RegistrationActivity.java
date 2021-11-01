@@ -245,7 +245,8 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             public void onSuccess(@NonNull DocumentReference documentReference) {
                 //register_data_supervisior(Email,Phone,Name);
-                Toast.makeText(RegistrationActivity.this,"Admin added",Toast.LENGTH_LONG).show();
+                register_data_users(Email,Phone,Name);
+                Toast.makeText(RegistrationActivity.this,"Head Supervisor added",Toast.LENGTH_LONG).show();
 
                 Intent mainIntent = new Intent(RegistrationActivity.this, Adminbottomnavigation.class);
                 mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

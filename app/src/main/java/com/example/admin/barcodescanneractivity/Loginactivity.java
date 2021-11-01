@@ -58,6 +58,8 @@ public class Loginactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
          setContentView(R.layout.login_activity);
          init();
+
+
         plant_selection.setEnabled(false);
         plant_spinner();
          Login.setOnClickListener(new btnloginonclicklistener());
@@ -87,7 +89,6 @@ public class Loginactivity extends AppCompatActivity {
     public class btnloginonclicklistener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
-
 
 
             if(EMAIL.getText().toString().isEmpty()){

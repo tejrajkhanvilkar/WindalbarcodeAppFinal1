@@ -45,6 +45,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.TimeZone;
 
 public class vehicleinformation extends AppCompatActivity {
     public String selectedPartName;
@@ -436,13 +437,14 @@ public class vehicleinformation extends AppCompatActivity {
         @Override
         public void onClick(View view) {
 
+            Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
             DatePickerDialog dobPickerDialog =
                     new DatePickerDialog(
                             vehicleinformation.this,
                             new DOBPickUpListener(),
-                            2021,
-                            9,
-                            1
+                            calendar.get(Calendar.YEAR),
+                            calendar.get(Calendar.MONTH),
+                            calendar.get(Calendar.DAY_OF_MONTH)
                     );
             dobPickerDialog.show();
         }
