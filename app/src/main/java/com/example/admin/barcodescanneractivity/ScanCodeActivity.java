@@ -30,9 +30,14 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.zxing.Result;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TimeZone;
 
 public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
     int MY_PERMISSIONS_REQUEST_CAMERA=0;
@@ -68,7 +73,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
     ArrayList<String> supervisor_phno;
     ArrayList<String> head_supervisor_phno;
     ArrayList<String> all_phno;
-
+    String loginemail;
     ZXingScannerView scannerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +98,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
         Toast.makeText(ScanCodeActivity.this, "phno list:"+supervisor_phno.toString(), Toast.LENGTH_SHORT).show();
         @SuppressLint("WrongConstant") SharedPreferences sh = getSharedPreferences("PLANTADMIN",MODE_APPEND);
         plants = sh.getString("plant","");
+        loginemail = sh.getString("login_email","");
 
 //        db.collection(plants)
 //                .document("supervisor")
@@ -358,6 +364,10 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
         summary_correct.setText(String.valueOf(sh.getInt("correct",0)));
         summary_wrong.setText(String.valueOf(sh.getInt("wrong",0)));
 
+//        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+
+        DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy, HH:mm");
+        String date = df.format(Calendar.getInstance().getTime());
 
 
         dialogView.findViewById(R.id.ok_summary).setOnClickListener(new View.OnClickListener() {
@@ -372,6 +382,11 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
                 scanner_data.put("invoice_number", invoice_number);
                 scanner_data.put("part_code", selectedPartName);
                 scanner_data.put("part_quantity", String.valueOf(quantity));
+                //
+                scanner_data.put("time",date);
+                //
+                scanner_data.put("user_email",loginemail);
+                //
                 scanner_data.put("correct_barcode", String.valueOf(sh.getInt("correct",0)));
                 scanner_data.put("wrong_barcode", String.valueOf(sh.getInt("wrong",0)));
                 String wrong = String.valueOf(sh.getInt("wrong",0));

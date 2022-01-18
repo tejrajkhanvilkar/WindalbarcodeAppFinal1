@@ -160,6 +160,7 @@ public class Loginactivity extends AppCompatActivity {
                              SharedPreferences sharedPreferences = getSharedPreferences("PLANTADMIN",MODE_PRIVATE);
                              SharedPreferences.Editor ADMINDATA = sharedPreferences.edit();
                              ADMINDATA.putString("plant",plant_selection.getSelectedItem().toString());
+                             ADMINDATA.putString("login_email",email);
                              ADMINDATA.commit();
                              Intent intent = new Intent(Loginactivity.this, vehicleinformation.class);
                              startActivity(intent);
