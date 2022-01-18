@@ -128,6 +128,7 @@ public class Addparts extends AppCompatActivity {
                 public void onClick(View view) {
 
                        deletepart(DELETEPARTNAME.getText().toString().toUpperCase(Locale.ROOT).trim());
+                       alertDialog.dismiss();
 
                 }
             });
@@ -208,7 +209,7 @@ public class Addparts extends AppCompatActivity {
              public void onSuccess(@NonNull QuerySnapshot queryDocumentSnapshots) {
                  for (DocumentSnapshot snapshot : queryDocumentSnapshots.getDocuments()){
 
-                     Toast.makeText(Addparts.this,snapshot.getId().toString(),Toast.LENGTH_SHORT).show();
+                     Toast.makeText(Addparts.this,"Part Deleted",Toast.LENGTH_SHORT).show();
                      firebaseFirestore.collection(plants).document("parts")
                              .collection("all parts").document(snapshot.getId().toString()).delete();
                  }

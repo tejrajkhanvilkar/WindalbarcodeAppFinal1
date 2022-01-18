@@ -349,6 +349,7 @@ public class vehicleinformation extends AppCompatActivity {
                 myEditLogin.commit();
                 Intent intent = new Intent(vehicleinformation.this,LoginoptionsActivity.class);
                 startActivity(intent);
+                finish();
 
                 return true;
         }

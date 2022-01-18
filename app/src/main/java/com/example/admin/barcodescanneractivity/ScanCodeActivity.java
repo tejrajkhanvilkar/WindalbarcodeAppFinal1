@@ -467,6 +467,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
     }
 
 
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -573,7 +574,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
 
         @Override
         protected Void doInBackground(Void... voids) {
-            mySmsManager.sendTextMessage(phno, null, "!!Alert!!\n\n"+"Please note in vehicle no: "+vehicle_number.toString()+"\n"+"Part no: "+selectedPartName.toString()+"\n"+"\n\n"+"All parts have correct barcode", null, null);
+            mySmsManager.sendTextMessage(phno, null, "!!Alert!!\n\n"+"Please note in vehicle no: "+vehicle_number.toString()+"\n"+"Part no: "+selectedPartName.toString()+"\n"+"\n\n"+"All"+String.valueOf(sh.getInt("correct",-1 ))+"parts have correct barcode", null, null);
             return null;
         }
 

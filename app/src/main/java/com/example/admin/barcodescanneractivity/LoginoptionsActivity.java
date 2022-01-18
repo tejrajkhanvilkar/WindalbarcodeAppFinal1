@@ -37,6 +37,7 @@ public class LoginoptionsActivity extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = new Intent(LoginoptionsActivity.this,Loginactivity.class);
             startActivity(intent);
+            finish();
         }
     }
 
@@ -45,6 +46,7 @@ public class LoginoptionsActivity extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = new Intent(LoginoptionsActivity.this, AdminLoginScreen.class);
             startActivity(intent);
+            finish();
         }
     }
 
