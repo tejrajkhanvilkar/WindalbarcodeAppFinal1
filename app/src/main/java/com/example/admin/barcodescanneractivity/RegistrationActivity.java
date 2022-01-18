@@ -176,10 +176,15 @@ public class RegistrationActivity extends AppCompatActivity {
                          register_data_users(Email,Phone,Name);
                    }else if (Designation.matches("ADMIN")){
                         register_data_admin(Email,Phone,Name);
+                        register_data_users(Email,Phone,Name);
+                        register_data_Headsupervisior(Email,Phone,Name);
+                        register_data_supervisior(Email,Phone,Name);
                    }else if (Designation.matches("SUPERVISOR")){
                         register_data_supervisior(Email,Phone,Name);
+                        register_data_users(Email,Phone,Name);
                    }else if (Designation.matches("HEAD SUPERVISOR")){
                        register_data_Headsupervisior(Email,Phone,Name);
+                       register_data_users(Email,Phone,Name);
                    }
 
                }
