@@ -195,7 +195,8 @@ public class ExportToExcel extends AppCompatActivity {
                             public void onSuccess(@NonNull QuerySnapshot queryDocumentSnapshots) {
                                 for(DocumentSnapshot document: queryDocumentSnapshots.getDocuments()){
                                     Log.e("documet is: ", document.getData().toString());
-                                    data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode"));
+                                    //data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode"));
+                                    data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode")+","+document.getData().get("time")+","+document.getData().get("user_email"));
                                 }
                                 abd();
                             }
@@ -242,7 +243,8 @@ public class ExportToExcel extends AppCompatActivity {
                         public void onSuccess(@NonNull QuerySnapshot queryDocumentSnapshots) {
                             for(DocumentSnapshot document: queryDocumentSnapshots.getDocuments()){
                                 Log.e("documet is: ", document.getData().toString());
-                                data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode"));
+                                //data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode"));
+                                data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode")+","+document.getData().get("time")+","+document.getData().get("user_email"));
                             }
                             abd();
                         }
@@ -266,7 +268,8 @@ public class ExportToExcel extends AppCompatActivity {
                         public void onSuccess(@NonNull QuerySnapshot queryDocumentSnapshots) {
                             for(DocumentSnapshot document: queryDocumentSnapshots.getDocuments()){
                                 Log.e("documet is: ", document.getData().toString());
-                                data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode"));
+                               // data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode"));
+                                data.append("\n"+ document.getData().get("plant")+","+document.getData().get("date")+","+document.getData().get("vehicle_number")+","+document.getData().get("invoice_number")+","+document.getData().get("part_name")+","+document.getData().get("part_code")+","+document.getData().get("part_quantity")+","+document.getData().get("correct_barcode")+","+document.getData().get("wrong_barcode")+","+document.getData().get("time")+","+document.getData().get("user_email"));
                             }
                             abd();
                         }
